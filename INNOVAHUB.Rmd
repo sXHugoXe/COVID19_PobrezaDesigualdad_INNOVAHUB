@@ -1,0 +1,156 @@
+---
+title: "COVID-19, Pobreza y Desigualdad"
+subtitle: |
+  ![](innovahub.png){width=3in}   
+author: |
+  Karen Calva$^{a}$, Yasmín Salazar$^{b}$ & Hugo Porras$^{a,c}$ 
+  \
+  $^{a}$ECUanalytics
+  \
+  $^{b}$Departamento de Economía Cuantitativa, Escuela Politécnica Nacional
+  \
+  $^{c}$INSight
+
+date: "Noviembre 18, 2020"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#FFFFFF",
+  secondary_color = "#3333b2",
+  inverse_header_color = "#FFFFFF"
+)
+load("AnalisisMarzo_Detenidos2.RData")
+```
+
+
+class: inverse, center, middle
+
+# Contexto nacional
+
+---
+
+**Estado de excepción**
+
+- El 17 de marzo de 2020, el gobierno ecuatoriano declaró estado de excepción por varios casos confirmados de coronavirus y la declaración de la pandemia de COVID-19 por parte de la Organización Mundial de la Salud, mediante el Decreto 1017.
+
+- Entre otras medidas anunciadas en el Decreto, se suspendieron el derecho a la libertad de circulación y el derecho a la libertad asociación y unión.
+
+- El Comité Nacional de Operaciones de Emergencia (COE) tiene, entre otras facultades, la facultad de fijar horarios y restricciones mecanismos para cada uno de estos derechos.
+
+--
+
+**Mecanismos de restricción y COVID-19**
+
+- Según la Fiscalía General del Estado (FGE), hasta el 4 de abril de 2020 fueron detenidas aproximadamente 1.200 personas por el delito de incumplimiento de decisiones legítimas de autoridad; es decir, por romper el toque de queda [[1]](https://www.arduinotomasi.com/post/guayaquil-indisciplinado).
+
+- La mayoría de los detenidos se presentó en la provincia de Guayas, que, en ese momento, también presentaba el mayor número de contagios y muertes. El incumplimiento de las restricciones de movilidad se asoció con una probable “indisciplina” de quienes no cumplieron.
+
+---
+
+- Con un análisis más detallado, aquí presentado, se puede inferir que las causas del incumplimiento podrían estar relacionadas con condiciones de pobreza, desigualdad, hacinamiento y desempleo.
+
+- Además, estas mismas condiciones parecen estar asociadas con un alto número de infecciones y muertes por COVID-19.
+
+--
+
+**La situación ecuatoriana**
+
+- Los análisis comparativos disponibles en el sitio web de la Universidad Johns Hopkins sugieren un escenario poco optimista para el país y reflejan la gravedad de la crisis sanitaria desatada por el COVID-19, que ha provocado miles de muertes.
+
+- La multitud de personas que aparentemente no respetan las solicitudes de las autoridades de limitar la circulación también son dignas de noticias. De esta forma surgen algunas pistas sobre qué podría explicar este comportamiento, que a su vez, constituye una mayor exposición al virus por no cumplir con la campaña “Quédate en casa” [[2]](https: / /www.csis.org/analysis/covid-19-exposes-latin-americas-inequality).
+
+- La crisis sanitaria afectó gravemente las tasas de empleo adecuado, subempleo y desempleo, que pasaron del 8,8%, 17,8% y 3,8% en diciembre de 2019 al 16,7%, 34,5% y 13,3% en junio de 2020 respectivamente [[3]](https : //www.ecuadorencifras.gob.ec/documentos/web-inec/EMPLEO/2020/ENEMDU_telefonica/Principales_Resultados_Mercado_Laboral.pdf).
+
+---
+class: inverse, middle, center
+
+# Metodología
+
+---
+
+- Con el fin de controlar la propagación del COVID-19, el 17 de marzo el gobierno ecuatoriano decretó restricciones de movilidad. Hasta el 4 de abril de 2020, aproximadamente 1.200 personas fueron procesadas por el delito de incumplimiento de decisiones legítimas de autoridad; en otras palabras, por romper el toque de queda.
+
+- En esta investigación estadística se utilizan datos de las siguientes instituciones públicas: Ministerio de Salud, Instituto Nacional de Estadística y Censos y Fiscalía General del Estado, con el fin de crear grupos homogéneos en cuanto a la ratio de detenidos y características socioeconómicas de cada provincia.
+
+- El número de detenciones y casos confirmados de coronavirus corresponden a marzo de 2020.
+
+- Los indicadores socioeconómicos de la encuesta ENEMDU corresponden a 2018.
+
+- Al final, tres variables principales dirigen la construcción de los grupos: índice de arrestos (con la densidad de población como referencia), años de alfabetización por provincia y niveles de pobreza por ingresos.
+
+---
+class:  inverse,middle, center
+
+# Resultados
+
+---
+class:  middle, center
+
+- La informalidad laboral, la desigualdad económica y la pobreza se combinan peligrosamente en un término: hambre. Las personas que tienen más probabilidades de padecer hambre son las que más violan el toque de queda y, por tanto, están más expuestas al contagio del COVID-19.
+
+- En este contexto, este informe establece relaciones entre variables sociales y económicas - como pobreza, desigualdad de ingresos, hacinamiento e informalidad laboral, con la proporción de detenidos por incumplimiento del toque de queda y el número de infecciones y muertes por COVID-19.
+
+- El COVID-19 está profundizando los problemas sociales y económicos históricos y persistentes de Ecuador. Es urgente adoptar medidas “salvavidas” para proteger a la población más vulnerable ya los nuevos pobres que solo tienen dos opciones: morir de hambre o con COVID-19.
+
+---
+class:  middle, center
+**Visión geográfica de los grupos**
+
+En Ecuador, la tasa de detención de personas que violan el toque de queda decretado en el contexto del COVID-19, es mayor en las zonas fronterizas, principalmente amazónicas.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+hc_map_ec
+```
+
+
+---
+class:  middle, center
+¿La gente no cumple con el toque de queda por indisciplina social? Los resultados sugieren que es la inminencia del hambre lo que los obliga a salir en busca del sustento diario.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+plotIPM
+```
+
+---
+class:  middle, center
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+plotGINI
+```
+---
+class:  middle, center
+
+
+La precariedad del empleo y la disminución de los trabajos formales aumentan la probabilidad de que las personas realicen actividades informales. La informalidad laboral, la desigualdad económica y la pobreza se combinan peligrosamente en un solo término: hambre.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+plotHAC
+```
+---
+class:  middle, center
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+plotINF
+```
+
+---
+class:  inverse,middle, center
+
+# Gracias
+![](logo.png)
