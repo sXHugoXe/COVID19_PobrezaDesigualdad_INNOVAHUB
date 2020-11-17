@@ -50,7 +50,7 @@ class: inverse, center, middle
 
 - Entre otras medidas anunciadas en el Decreto, se suspendieron el derecho a la libertad de circulación y el derecho a la libertad asociación y unión.
 
-- El Comité Nacional de Operaciones de Emergencia (COE) tiene, entre otras facultades, la facultad de fijar horarios y restricciones mecanismos para cada uno de estos derechos.
+- El Comité Nacional de Operaciones de Emergencia (COE) tiene, entre otras facultades, la facultad de fijar horarios y establecer mecanismos para cada uno de estos derechos.
 
 --
 
