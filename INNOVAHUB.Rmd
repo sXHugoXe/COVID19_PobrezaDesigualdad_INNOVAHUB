@@ -1,7 +1,7 @@
 ---
 title: "COVID-19, Pobreza y Desigualdad"
 subtitle: |
-  ![](innovahub.png){width=3in}   
+  ![](Portada.png){width=3in}   
 author: |
   Karen Calva$^{a}$, Yasmín Salazar$^{b}$ & Hugo Porras$^{a,c}$ 
   \
@@ -11,7 +11,7 @@ author: |
   \
   $^{c}$INSight
 
-date: "Noviembre 18, 2020"
+date: "Diciembre 05, 2020"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -34,7 +34,7 @@ style_duo_accent(
   secondary_color = "#3333b2",
   inverse_header_color = "#FFFFFF"
 )
-load("AnalisisMarzo_Detenidos2.RData")
+load("AnalisisMarzo_Detenidos.RData")
 ```
 
 
@@ -82,8 +82,7 @@ class: inverse, middle, center
 # Metodología
 
 ---
-
-- Con el fin de controlar la propagación del COVID-19, el 17 de marzo el gobierno ecuatoriano decretó restricciones de movilidad. Hasta el 4 de abril de 2020, aproximadamente 1.200 personas fueron procesadas por el delito de incumplimiento de decisiones legítimas de autoridad; en otras palabras, por romper el toque de queda.
+class:  middle, center
 
 - En esta investigación estadística se utilizan datos de las siguientes instituciones públicas: Ministerio de Salud, Instituto Nacional de Estadística y Censos y Fiscalía General del Estado, con el fin de crear grupos homogéneos en cuanto a la ratio de detenidos y características socioeconómicas de cada provincia.
 
@@ -92,6 +91,8 @@ class: inverse, middle, center
 - Los indicadores socioeconómicos de la encuesta ENEMDU corresponden a 2018.
 
 - Al final, tres variables principales dirigen la construcción de los grupos: índice de arrestos (con la densidad de población como referencia), años de alfabetización por provincia y niveles de pobreza por ingresos.
+
+- ACP Robusto (aprovechamiento de características comunes) + K-Medias (creación de conglomerados)
 
 ---
 class:  inverse,middle, center
@@ -106,6 +107,8 @@ class:  middle, center
 - En este contexto, este informe establece relaciones entre variables sociales y económicas - como pobreza, desigualdad de ingresos, hacinamiento e informalidad laboral, con la proporción de detenidos por incumplimiento del toque de queda y el número de infecciones y muertes por COVID-19.
 
 - El COVID-19 está profundizando los problemas sociales y económicos históricos y persistentes de Ecuador. Es urgente adoptar medidas “salvavidas” para proteger a la población más vulnerable ya los nuevos pobres que solo tienen dos opciones: morir de hambre o con COVID-19.
+
+- [Dashboard Covid-19, Pobreza y Desigualdad](https://hugoporras.shinyapps.io/COVID19_PobrezaDesigualdad/)
 
 ---
 class:  middle, center
